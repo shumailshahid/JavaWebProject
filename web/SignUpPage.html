@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>
+		SignUpPageHTML
+	</title>
+
+	
+	
+	<style type="text/css">
+		body
+		{
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px; 
+
+		}
+
+		#Content
+{
+	
+	height: 1000px;
+	
+	
+	background-image: url('contentImage.jpg');
+	background-repeat: repeat-y;
+	background-position: top center;
+	
+
+
+}
+
+#Content h1
+{
+	float: left;
+	
+	width: 1300px;
+	height: 10px;
+	text-align: center;
+	line-height: 10px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 50px;
+
+
+}
+
+#Content h1 input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#Content h1 input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#Content h1 input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#Content h1 input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+#Content h1 select {
+    width: 13%;
+    padding: 5px 10px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#Content h1 select:focus {
+    border: 3px solid #555;
+}
+
+
+
+#Content h2
+{
+	float: left;
+	
+	width: 1300px;
+	height: 50px;
+	text-align: center;
+	line-height: 75px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 36px;
+	font-weight: bolder;
+
+}
+
+#Content h2 input[type=submit]
+{
+	
+	 
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+#Content h2 input[type=submit]:hover
+{
+	background-color: #404040;
+}
+
+#Content h3
+{
+	float: left;
+	
+	width: 1300px;
+	height: 10px;
+	text-align: center;
+	line-height: 10px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-top: 100px;
+
+
+}
+#Footer 
+{
+	height: 40px;
+	background-color: #666;
+}
+
+#Footer  ul
+{
+	margin: 0;
+	padding: 0;
+
+}
+
+#Footer  li
+{
+	list-style-type: none;
+	float: left;
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: Tahoma, Genva, sans-serif;
+	font-size: 17px;
+
+}
+
+#Footer li a
+{
+	text-decoration: none;
+	color: black;
+}
+	</style>
+</head>
+<body>
+	<div>
+            
+				
+
+				<div id = "Content">
+					<h3>
+						<label><b>Sign Up!</b></label>
+					</h3>
+                                        
+					<h1>
+                                        <form action="SignUpJSP.jsp" method="get">
+                                            <input type="text" placeholder="First Name" name="firstName" size="30"/> 
+					
+					<p></p>
+                                        <input type="text" placeholder="Last Name" name="lastName" size="30"/> 
+					
+					<p></p>
+					<input type="password" placeholder="Password" name="password" size="30"/>
+					<p></p>
+					<input type="text" placeholder="Username" name="loginname" size="30"/>
+					<p></p>
+					<input type="text" placeholder="Email" name="email" size="30"/>
+					<p></p>
+					
+					
+					<p></p>
+                                        <label>Mobile:</label>
+				 	<p></p>
+					<input type="text"  placeholder="Mobile Phone" name="mobileNumber"/>
+					<p></p>
+
+					<label>Gender: 
+					<p></p>
+						<select name="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						</select>
+					</label> 
+					<p></p>
+					
+					<p></p>					
+					
+					
+				 	
+					
+					
+					
+					By signing up you agree to our terms and privacy policy. <input type="checkbox" name="agree" value="agree" />
+					<p></p>
+					<h2>
+					<input type="submit" name="signUp" value="Sign Up"/> 
+					</h2>
+                                        </form>
+
+					</h1>
+				</div>
+		</div>
+		<div id="Footer">
+			<ul>
+				<li>
+					<a href="#">Privacy</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>	
+					<a href="#">About Us</a>
+				</li>
+			</ul>
+			
+		</div>
+
+
+</body>
+</html>
